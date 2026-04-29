@@ -22,32 +22,24 @@
             line-height: 1.6;
         }
 
-    
-/* CONSTRAINED BANNER */
-.hero-banner {
-    width: 100%;
-    height: 80px; /* Adjust this number to make it even slimmer (e.g., 200px) */
-    background-color: #1a1a1a;
-    border-bottom: 3px solid var(--hyrox-yellow);
-    overflow: hidden; /* Clips the image if it's too tall */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        /* CONSTRAINED BANNER */
+        .hero-banner {
+            width: 100%;
+            height: 180px; /* Adjusted height for better visibility */
+            background-color: #1a1a1a;
+            border-bottom: 3px solid var(--hyrox-yellow);
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-.hero-banner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* This keeps the tech symbols centered and sharp */
-    object-position: center; /* Ensures the middle of the logo is always visible */
-}
-
-/* Optional: Slimmer title for a more compact top-of-page look */
-h1 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 2rem; 
-    margin-top: 20px;
-}
+        .hero-banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
 
         /* MAIN CONTENT CONTAINER */
         .container {
@@ -112,6 +104,14 @@ h1 {
             text-decoration: underline;
         }
 
+        .note {
+            display: block;
+            margin-top: 10px;
+            font-style: italic;
+            color: var(--hyrox-yellow);
+            font-weight: bold;
+        }
+
         /* Table Styling */
         table {
             width: 100%;
@@ -152,11 +152,30 @@ h1 {
     <h3>Event Overview</h3>
 
     <div class="accordion">
-        <div class="accordion-header" onclick="toggleAccordion('race-syntax')">
-            🔗 to Race Week Syntax <span>+</span>
+        <div class="accordion-header" onclick="toggleAccordion('floor-map')">
+            🔗 to Floor Map <span>+</span>
         </div>
-        <div class="accordion-content" id="race-syntax">
-            <p>The 🔗 to the Race Week Syntax is <a href="YOUR_LINK_HERE" target="_blank">HERE</a></p>
+        <div class="accordion-content" id="floor-map">
+            <p>The 🔗 to the Floor Map is <a href="https://drive.google.com/file/d/1QUkeR1-vqblr9hO7Vddjs3GUCfNSpylO/view?usp=sharing" target="_blank">HERE</a></p>
+        </div>
+    </div>
+
+    <div class="accordion">
+        <div class="accordion-header" onclick="toggleAccordion('loop-channel')">
+            🔗 to Loop Channel Assignment <span>+</span>
+        </div>
+        <div class="accordion-content" id="loop-channel">
+            <p>The 🔗 to the Loop Channel Assignment is <a href="https://docs.google.com/spreadsheets/d/1Z4xVx2gqcWqaX_h2xDgRBTwDiTzK9ypVRiJNqTCVAbs/edit?gid=1741292915#gid=1741292915" target="_blank">HERE</a></p>
+        </div>
+    </div>
+
+    <div class="accordion">
+        <div class="accordion-header" onclick="toggleAccordion('run-calculator')">
+            🔗 to Run Course Calculator <span>+</span>
+        </div>
+        <div class="accordion-content" id="run-calculator">
+            <p>The 🔗 to the Run Course Calculator is <a href="https://docs.google.com/spreadsheets/d/1dMXnR9cGa8LomWw3NkOzfbEE2TMNXhejnh6oTTqMETg/edit?gid=649579691#gid=649579691" target="_blank">HERE</a></p>
+            <span class="note">Note: 1 lap on runs 2-7 and 2 laps on run 8</span>
         </div>
     </div>
 
