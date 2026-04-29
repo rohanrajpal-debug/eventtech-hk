@@ -22,19 +22,32 @@
             line-height: 1.6;
         }
 
-        /* FULL WIDTH BANNER AT TOP */
-        .hero-banner {
-            width: 100%;
-            background-color: #1a1a1a;
-            border-bottom: 3px solid var(--hyrox-yellow); /* Thick yellow line to separate from content */
-            line-height: 0; 
-        }
+    
+/* CONSTRAINED BANNER */
+.hero-banner {
+    width: 100%;
+    height: 300px; /* Adjust this number to make it even slimmer (e.g., 200px) */
+    background-color: #1a1a1a;
+    border-bottom: 3px solid var(--hyrox-yellow);
+    overflow: hidden; /* Clips the image if it's too tall */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-        .hero-banner img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
+.hero-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This keeps the tech symbols centered and sharp */
+    object-position: center; /* Ensures the middle of the logo is always visible */
+}
+
+/* Optional: Slimmer title for a more compact top-of-page look */
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem; 
+    margin-top: 20px;
+}
 
         /* MAIN CONTENT CONTAINER */
         .container {
