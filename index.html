@@ -22,33 +22,24 @@
             line-height: 1.6;
         }
 
-header {
-    background: var(--hyrox-black);
-    padding: 20px 5%; 
-    border-bottom: 2px solid var(--hyrox-yellow);
-    display: flex;
-    justify-content: center; /* This moves the logo to the horizontal center */
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
+        /* FULL WIDTH BANNER AT TOP */
+        .hero-banner {
+            width: 100%;
+            background-color: #1a1a1a;
+            border-bottom: 3px solid var(--hyrox-yellow); /* Thick yellow line to separate from content */
+            line-height: 0; 
+        }
 
-.logo img { 
-    height: 120px; /* Adjust this number to make it even bigger or smaller */
-    width: auto;
-    display: block;
-    mix-blend-mode: screen; 
-    filter: brightness(1.1);
-}
-        .logo {
-    display: flex;
-    justify-content: center;
-}
+        .hero-banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
 
+        /* MAIN CONTENT CONTAINER */
         .container {
             max-width: 1100px;
-            margin: 50px auto;
+            margin: 40px auto;
             padding: 0 20px;
         }
 
@@ -108,7 +99,7 @@ header {
             text-decoration: underline;
         }
 
-        /* Table Styling for Roles */
+        /* Table Styling */
         table {
             width: 100%;
             border-collapse: collapse;
@@ -133,16 +124,13 @@ header {
             margin-top: 10px;
             text-transform: uppercase;
         }
-
     </style>
 </head>
 <body>
 
-<header>
-    <div class="logo">
-        <img src="et-logo.png" alt="HYROX">
-    </div>
-</header>
+<section class="hero-banner">
+    <img src="et-logo.jpg" alt="HYROX EVENT TECH BANNER">
+</section>
 
 <div class="container">
     <h1>Event Tech Page – HONG KONG (08.05)</h1>
@@ -184,9 +172,9 @@ header {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td>Managing Director</td><td>John</td><td>Doe</td></tr>
-                    <tr><td>Event Director</td><td>Jane</td><td>Smith</td></tr>
-                    <tr><td>Race Office Manager</td><td>Alex</td><td>Jones</td></tr>
+                    <tr><td>Managing Director</td><td>Gary</td><td>Wan</td></tr>
+                    <tr><td>Event Director</td><td>Richard</td><td>Cowley</td></tr>
+                    <tr><td>Marketing Director</td><td>Victoria</td><td>Bhojwani</td></tr>
                 </tbody>
             </table>
         </div>
@@ -213,7 +201,6 @@ header {
             <a href="YOUR_PDF_LINK" class="btn-yellow">Risk Management PDF</a>
         </div>
     </div>
-
 </div>
 
 <script>
