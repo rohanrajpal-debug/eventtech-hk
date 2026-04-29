@@ -22,24 +22,28 @@
             line-height: 1.6;
         }
 
-        header {
-            background: var(--hyrox-black);
-            padding: 20px 5%;
-            border-bottom: 1px solid #333;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
+header {
+    background: var(--hyrox-black);
+    padding: 20px 5%; 
+    border-bottom: 2px solid var(--hyrox-yellow);
+    display: flex;
+    justify-content: center; /* This moves the logo to the horizontal center */
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
-        .logo img { 
-    height: 100px; /* Increase this number to make the logo larger */
+.logo img { 
+    height: 120px; /* Adjust this number to make it even bigger or smaller */
     width: auto;
     display: block;
     mix-blend-mode: screen; 
     filter: brightness(1.1);
+}
+        .logo {
+    display: flex;
+    justify-content: center;
 }
 
         .container {
